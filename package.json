@@ -1,7 +1,7 @@
 {
-  "name": "sample-base-setup",
+  "name": "node-express-typescript-mongodb-boilerplate",
   "version": "1.0.0",
-  "description": "Backend service for sample base setup",
+  "description": "Professional backend boilerplate built with Node.js, Express, TypeScript, and MongoDB.",
   "main": "lib/index.js",
   "scripts": {
     "tsc": "tsc -p .",
@@ -17,12 +17,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/exelon-anix-innovation/sample-base-setup.git"
+    "url": "git+https://github.com/jp973/node-express-typescript-mongodb-boilerplate.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/exelon-anix-innovation/sample-base-setup/issues"
+    "url": "https://github.com/jp973/node-express-typescript-mongodb-boilerplate/issues"
   },
-  "homepage": "https://gitlab.com/exelon-anix-innovation/sample-base-setup#readme",
+  "homepage": "https://github.com/jp973/node-express-typescript-mongodb-boilerplate#readme",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1014.0",
     "@aws-sdk/s3-request-presigner": "^3.1014.0",

@@ -1,4 +1,4 @@
-# Sample Base Setup - Backend Service
+# Node Express TypeScript MongoDB Boilerplate - Backend Service
 
 ![Node.js Version](https://img.shields.io/badge/node-%3E%3D24.0.0-brightgreen)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
@@ -67,8 +67,8 @@ src/
 
 1.  **Clone the repository**:
     ```bash
-    git clone git+ssh://git@gitlab.com/exelon-anix-innovation/sample-base-setup.git
-    cd sample-base-setup
+    git clone https://github.com/jp973/node-express-typescript-mongodb-boilerplate.git
+    cd node-express-typescript-mongodb-boilerplate
     ```
 
 2.  **Install dependencies**:
