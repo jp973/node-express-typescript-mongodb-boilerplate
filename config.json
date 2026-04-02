@@ -1,0 +1,22 @@
+{
+  "development": {
+    "PORT": 7009,
+    "SWAGGER_URLS": "http://localhost:7009",
+    "SERVICE_PROVIDER": "resendService",
+    "RESEND_FROM": "resend_from",
+    "OTP_EXPIRY": 10,
+    "ACCESS_TOKEN_EXPIRY": 43200,
+    "REFRESH_TOKEN_EXPIRY": 5256000,
+    "STORAGE_SERVICE": "S3",
+    "S3_REGION": "ap-south-1",
+    "S3_BUCKET": "development",
+    "SIGNEDURL_EXPIRY": 60,
+    "SEED": {
+      "SUPER_ADMIN": {
+        "EMAIL": "admin@gmail.com",
+        "NAME": "SUPERADMIN",
+        "PASSWORD": "Admin@123"
+      }
+    }
+  }
+}

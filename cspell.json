@@ -1,0 +1,16 @@
+{
+  "words": [
+    "accesstokens",
+    "uniqid",
+    "anix",
+    "dashcam",
+    "sarif",
+    "libtest",
+    "developmentexelon",
+    "SIGNEDURL",
+    "SUPERADMIN"
+  ],
+  "ignoreRegExpList": [
+    "/\\bI[A-Z][a-zA-Z]*\\b/"
+  ]
+}

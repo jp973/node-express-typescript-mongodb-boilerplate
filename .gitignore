@@ -1,0 +1,23 @@
+dist/
+build/
+lib/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+node_modules/
+.env
+.env.development
+.env.production
+log_Rotate/
+.env.test
+libtest/
+
+# CodeQL
+.codeql-db/
+codeql-results.sarif
+gitleaks-report.json
+gitleaks-history-report.json
+
+

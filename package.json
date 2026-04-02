@@ -1,0 +1,82 @@
+{
+  "name": "sample-base-setup",
+  "version": "1.0.0",
+  "description": "Backend service for sample base setup",
+  "main": "lib/index.js",
+  "scripts": {
+    "tsc": "tsc -p .",
+    "start": "npm run build:live",
+    "lint": "eslint --fix --ext .ts,.tsx src",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts)\"",
+    "build": "npm run tsc",
+    "build:live": "nodemon --watch \"src/**\" --watch \".env\" --ext \"ts\" --exec \"ts-node\" src/index.ts",
+    "prepare": "husky",
+    "cspell": "cspell \"src/**/*.ts\""
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/exelon-anix-innovation/sample-base-setup.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/exelon-anix-innovation/sample-base-setup/issues"
+  },
+  "homepage": "https://gitlab.com/exelon-anix-innovation/sample-base-setup#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1014.0",
+    "@aws-sdk/s3-request-presigner": "^3.1014.0",
+    "@types/uniqid": "^5.3.4",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "hpp": "^0.2.3",
+    "india-states-districts": "^1.8.0",
+    "jsonwebtoken": "^9.0.2",
+    "mjml": "^4.18.0",
+    "mongoose": "^8.16.4",
+    "pino": "^10.1.0",
+    "resend": "^6.5.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uniqid": "^5.4.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/errorhandler": "^1.5.3",
+    "@types/express": "^5.0.3",
+    "@types/hpp": "^0.2.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.0.15",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@typescript-eslint/eslint-plugin": "^8.37.0",
+    "@typescript-eslint/parser": "^8.37.0",
+    "cspell": "^9.0.1",
+    "eslint": "^9.31.0",
+    "html-minifier-terser": "^5.1.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "lint-staged": {
+    "{src}/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "cspell --no-must-find-files --no-progress"
+    ]
+  },
+  "overrides": {
+    "html-minifier": "npm:html-minifier-terser@^5.1.1"
+  }
+}
